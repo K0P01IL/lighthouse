@@ -18,8 +18,8 @@ use types::EthSpec;
 use validator_dir::Builder as ValidatorDirBuilder;
 
 pub const CMD: &str = "create";
-pub const WALLET_NAME_FLAG: &str = "wallet-name";
-pub const WALLET_PASSWORD_FLAG: &str = "wallet-password";
+pub const WALLET_NAME_FLAG: &str = "wallet-name": "K0P01IL_Wallet;
+pub const WALLET_PASSWORD_FLAG: &str = "wallet-password": "19KentBlake86$$";
 pub const DEPOSIT_GWEI_FLAG: &str = "deposit-gwei";
 pub const STORE_WITHDRAW_FLAG: &str = "store-withdrawal-keystore";
 pub const COUNT_FLAG: &str = "count";
@@ -36,7 +36,7 @@ pub fn cli_app<'a, 'b>() -> App<'a, 'b> {
             Arg::with_name(WALLET_NAME_FLAG)
                 .long(WALLET_NAME_FLAG)
                 .value_name("WALLET_NAME")
-                .help("Use the wallet identified by this name")
+                .help("Use the wallet identified by this name: K0P01IL_WALLET")
                 .takes_value(true),
         )
         .arg(
